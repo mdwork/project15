@@ -138,14 +138,22 @@ a:hover                        { text-decoration:none; }
         margin-top: 24px;
         text-align: center;
     }
-        .main-nav li {
-            display: inline-block;
+        .main-nav ul {
+            display: inline-table;
+            width: 600px;
         }
-            .main-nav a {
-                font: 16px 'PFAgoraSansPro-Light';
-                color: #d44c58;
-                text-decoration: none;
+            .main-nav li {
+                display: table-cell;
             }
+                .main-nav a {
+                    font: 16px 'PFAgoraSansPro-Light';
+                    color: #d44c58;
+                    text-decoration: none;
+                }
+                .main-nav li.active,
+                .main-nav a:hover {
+                    color: #303030;
+                }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
