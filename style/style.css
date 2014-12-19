@@ -117,6 +117,24 @@ a:hover                        { text-decoration:none; }
         float: left;
         width: 195px;
     }
+    .list-social-links {
+        float: right;
+    }
+        .list-social-links li {
+            float: left;
+        }
+    .wrap-address {
+        text-align: center;
+    }
+        .address-footer {
+            display: inline-block;
+            font-style: normal;
+        }
+            .address-footer span {
+                display: block;
+                text-align: left;
+            }
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
