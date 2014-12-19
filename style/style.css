@@ -37,13 +37,7 @@ a:hover                        { text-decoration:none; }
 .clear                         { clear:both; }
 .clearfix:after                { content: ""; display: block; clear: both; visibility: hidden;}
 .clearfix                      { display: inline-block; width: 100% }
-button, input, a {
-	-webkit-transition: all .5s;
-	-moz-transition: all .5s;
-	-ms-transition: all .5s;
-	-o-transition: all .5s;
-	transition: all .5s;
-}
+
 .content {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
