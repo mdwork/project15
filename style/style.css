@@ -2,14 +2,15 @@
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
 /*----------------------------------------------------------------------------------*/
 html,body                       { width:100%; height:100%; }
-body                            { padding:0; margin:0; font:14px 'PFAgoraSansPro-Medium', sans-serif; background:#fff; color:#303030; }
-div,menu,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,legend,label,select,input,textarea {
+body                            { padding:0; margin:0; font:14px 'PFAgoraSansPro-Regular', sans-serif; background:#fff; color:#303030; }
+div,menu,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,legend,label,select,input,button,textarea {
 	padding:0;
 	margin:0;
 	outline:none;
 	list-style:none;
     line-height: 1.4;
 }
+button                         { cursor: pointer; }
 select, input, textarea        { font-size:14px; vertical-align:middle; }
 textarea                       { vertical-align:top; }
 :focus                         { outline:none; }
@@ -71,7 +72,7 @@ a:hover                        { text-decoration:none; }
     font-style: normal;
 }
 @font-face {
-    font-family: 'PFAgoraSansPro-Medium';
+    font-family: 'PFAgoraSansPro-Regular';
     src: url('../fonts/PFAgoraSansPro-Medium.eot');
     src: url('../fonts/PFAgoraSansPro-Medium.eot?#iefix') format('embedded-opentype'),
     url('../fonts/PFAgoraSansPro-Medium.woff') format('woff'),
@@ -81,7 +82,7 @@ a:hover                        { text-decoration:none; }
     font-style: normal;
 }
 @font-face {
-    font-family: 'PFAgoraSansPro-Thin';
+    font-family: 'PFAgoraSansPro-Light';
     src: url('../fonts/PFAgoraSansPro-Thin.eot');
     src: url('../fonts/PFAgoraSansPro-Thin.eot?#iefix') format('embedded-opentype'),
     url('../fonts/PFAgoraSansPro-Thin.woff') format('woff'),
@@ -105,7 +106,36 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-
+.main-logo {
+    float: left;
+}
+    .main-logo img {
+        display: block;
+        width: 130px;
+        height: 69px;
+    }
+.contact-box {
+    float: right;
+    margin-top: 7px;
+}
+    .contact-box .number-tell {
+        display: block;
+        font: 21px 'PFAgoraSansPro-Black';
+    }
+    .btn-callback {
+        background: none;
+        border: none;
+        border-bottom: 1px dotted #303030;
+    }
+    .btn-callback:hover {
+        border: none;
+    }
+.main-nav {
+    text-align: center;
+}
+    .main-nav li {
+        display: inline-block;
+    }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -120,7 +150,7 @@ a:hover                        { text-decoration:none; }
 .footer {
     margin-top: -104px;
     padding: 23px 0 42px;
-    font-family: 'PFAgoraSansPro-Thin';
+    font-family: 'PFAgoraSansPro-Light', sans-serif;
     border-top: 1px solid #E5E5E5;
 }
     .copyright {
