@@ -106,40 +106,52 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-.main-logo {
-    float: left;
+.main-header {
+    overflow: hidden;
+    padding-bottom: 15px;
 }
-    .main-logo img {
-        display: block;
-        width: 130px;
-        height: 69px;
+    .main-logo {
+        float: left;
     }
-.contact-box {
-    float: right;
-    margin-top: 7px;
-}
-    .contact-box .number-tell {
-        display: block;
-        font: 21px 'PFAgoraSansPro-Black';
+        .main-logo img {
+            display: block;
+            width: 130px;
+            height: 69px;
+        }
+    .contact-box {
+        float: right;
+        margin-top: 7px;
     }
-    .btn-callback {
-        background: none;
-        border: none;
-        border-bottom: 1px dotted #303030;
+        .contact-box .number-tell {
+            display: block;
+            font: 21px 'PFAgoraSansPro-Black';
+        }
+        .btn-callback {
+            background: none;
+            border: none;
+            border-bottom: 1px dotted #303030;
+        }
+        .btn-callback:hover {
+            border: none;
+        }
+    .main-nav {
+        margin-top: 24px;
+        text-align: center;
     }
-    .btn-callback:hover {
-        border: none;
-    }
-.main-nav {
-    text-align: center;
-}
-    .main-nav li {
-        display: inline-block;
-    }
+        .main-nav li {
+            display: inline-block;
+        }
+            .main-nav a {
+                font: 16px 'PFAgoraSansPro-Light';
+                color: #d44c58;
+                text-decoration: none;
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-
+.wrap-main-form {
+    height: 520px;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
