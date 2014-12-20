@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Index</title>
+    <title>Хорс - строительство домов из СИП панелей</title>
     <meta charset="utf-8" />
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=1024, user-scalable=yes">
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" type="text/css" href="feedback/css/jquery.arcticmodal.css">
+    <link rel="stylesheet" type="text/css" href="feedback/css/jquery.jgrowl.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 
 <body class="home-page">
@@ -18,7 +20,7 @@
 
             <div class="contact-box">
                 <strong class="number-tell">8 800 2000 600</strong>
-                <button class="btn-callback">Заказать обратный звонок</button>
+                <button class="btn-callback modal-btn">Заказать обратный звонок</button>
             </div>
 
             <nav class="main-nav" role="navigation">
@@ -55,7 +57,51 @@
         </div>
     </footer>
 
+    <div style="display: none;">
+        <div class="box-modal" id="small-modal">
+            <span class="modal-close arcticmodal-close">X</span>
+
+            <form class="callback-form" name="feedback" action="">
+                <fieldset>
+                    <legend class="header-form">Закажите бесплатную консультацию прямо сейчас и получите бонусы!</legend>
+
+                    <ul class="content-form">
+                        <li>
+                            <label>
+                                <input class="input-text" type="text" name="name" value="" placeholder="Представьтесь">
+                            </label>
+                        </li>
+
+                        <li>
+                            <label>
+                                <input class="input-text" type="tel" name="tell" value="" placeholder="+79001234567">
+                            </label>
+                        </li>
+
+                        <li>
+                            <input type="hidden" name="bot-field" value="">
+                        </li>
+                    </ul>
+
+                    <button class="btn feedback">Заказать</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/common.js"></script>
+
+    <!--Обратная связь-->
+    <script type="text/javascript" src="feedback/js/jquery.jgrowl.js"></script>
+    <script type="text/javascript" src="feedback/js/jquery.arcticmodal.js"></script>
+    <script type="text/javascript" src="feedback/js/feedback.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(document).on('click', '.modal-btn', function(){
+                $('#small-modal').arcticmodal();
+            });
+        });
+    </script>
 </body>
 </html>
