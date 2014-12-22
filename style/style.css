@@ -295,6 +295,7 @@ a:hover                        { text-decoration:none; }
     background: #F2F2F2;
 }
     .header-section {
+        display: block;
         text-align: center;
         font: 24px 'PFAgoraSansPro-Bold';
     }
@@ -455,8 +456,36 @@ a:hover                        { text-decoration:none; }
                             margin-right: 15px;
                             color: #d44c58;
                         }
-
-
+.problems-our-clients {
+    overflow: hidden;
+    padding: 35px 0 40px;
+    background: #F2F2F2;
+}
+    .problems-our-clients .header-section {
+        margin-bottom: 35px;
+    }
+    .list-problems {
+        float: left;
+        width: 460px;
+        margin-right: 10px;
+        padding: 25px 0;
+    }
+        .list-problems li {
+            margin-bottom: 20px;
+            padding: 1px 0 0 30px;
+            background: url("../images/content/icon_none.png") no-repeat;
+        }
+    .list-decisions {
+        float: right;
+        width: 400px;
+        padding: 25px 30px;
+        background: #fff;
+    }
+        .list-decisions li {
+            margin-bottom: 20px;
+            padding: 1px 0 0 30px;
+            background: url("../images/content/icon_ok.png") no-repeat;
+        }
 
 
 
