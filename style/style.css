@@ -203,6 +203,16 @@ a:hover                        { text-decoration:none; }
         text-align: center;
         font: 24px 'PFAgoraSansPro-Bold';
     }
+    .list-advantage {
+        overflow: hidden;
+    }
+        .list-advantage li {
+            float: left;
+            width: 235px;
+            height: 280px;
+            margin-bottom: 20px;
+            background: #D44C58;
+        }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
