@@ -94,6 +94,13 @@ a:hover                        { text-decoration:none; }
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: "rubl";
+    src: url("../fonts/rouble.eot");
+    src: url("../fonts/rouble.eot?#iefix") format("embedded-opentype"), url("../fonts/rouble.woff") format("woff"), url("../fonts/rouble.ttf") format("truetype"), url("../fonts/rouble.svg#") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -210,12 +217,14 @@ a:hover                        { text-decoration:none; }
         .list-advantage li {
             position: relative;
             float: left;
-            width: 235px;
-            height: 280px;
+            width: 205px;
+            height: 265px;
+            padding: 0 15px 15px 15px;
             margin-bottom: 20px;
             background: #D44C58;
             text-align: center;
             color: #fff;
+            font-family: 'PFAgoraSansPro-Light';;
         }
         .list-advantage .bg-maroon2 {
             background-color: #BC4852;
@@ -236,7 +245,12 @@ a:hover                        { text-decoration:none; }
                     vertical-align: middle;
                 }
             .header-advantage {
+                display: block;
+                margin-bottom: 10px;
                 font: 18px 'PFAgoraSansPro-Bold';
+            }
+            .rubl {
+                font-family: "rubl";
             }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
