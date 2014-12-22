@@ -486,9 +486,37 @@ a:hover                        { text-decoration:none; }
             padding: 1px 0 0 30px;
             background: url("../images/content/icon_ok.png") no-repeat;
         }
+.calculator-box {
 
+}
+    .calculator {
+        width: 550px;
+        margin: 0 auto;
+        padding: 10px 20px;
+        border: 1px solid #E9E9E9;
+    }
 
-
+.about-company {
+    overflow: hidden;
+    padding: 35px 0;
+}
+    .about-company .header-section {
+        margin-bottom: 20px;
+    }
+    .list-columns {
+        overflow: hidden;
+    }
+        .list-columns li {
+            float: left;
+            width: 460px;
+            margin-left: 20px;
+        }
+        .list-columns li:first-child {
+            margin-left: 0;
+        }
+            .list-columns p {
+                margin-bottom: 10px;
+            }
 
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
