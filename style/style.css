@@ -205,14 +205,39 @@ a:hover                        { text-decoration:none; }
     }
     .list-advantage {
         overflow: hidden;
+        margin-top: 25px;
     }
         .list-advantage li {
+            position: relative;
             float: left;
             width: 235px;
             height: 280px;
             margin-bottom: 20px;
             background: #D44C58;
+            text-align: center;
+            color: #fff;
         }
+        .list-advantage .bg-maroon2 {
+            background-color: #BC4852;
+        }
+        .list-advantage .bg-maroon3 {
+            background-color: #A3444C;
+        }
+        .list-advantage .bg-maroon4 {
+            background-color: #8A3F46;
+        }
+            .list-advantage .wrap-picture {
+                display: table;
+                height: 110px;
+                width: 100%;
+            }
+                .list-advantage .wrap-picture span {
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+            .header-advantage {
+                font: 18px 'PFAgoraSansPro-Bold';
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
