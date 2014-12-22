@@ -287,7 +287,7 @@ a:hover                        { text-decoration:none; }
                 top: -7px;
             }
 .box-advantages {
-    padding-top: 145px;
+    padding: 145px 0 30px;
     background: #F2F2F2;
 }
     .header-section {
@@ -300,6 +300,7 @@ a:hover                        { text-decoration:none; }
     }
         .list-advantage li {
             position: relative;
+            z-index: 10;
             float: left;
             width: 205px;
             height: 265px;
@@ -309,15 +310,50 @@ a:hover                        { text-decoration:none; }
             text-align: center;
             color: #fff;
             font-family: 'PFAgoraSansPro-Light';
+
+            -webkit-box-shadow: -10px 0px 0px 0px rgba(102, 48, 53, 1);
+            -moz-box-shadow:    -10px 0px 0px 0px rgba(102, 48, 53, 1);
+            box-shadow:         -10px 0px 0px 0px rgba(102, 48, 53, 1);
         }
+            .list-advantage li:after {
+                content: '';
+                position: absolute;
+                left: -10px;
+                bottom: 0;
+                width: 0;
+                height: 0;
+                border-bottom: 11px solid #D44C58;
+                border-left: 10px solid transparent;
+            }
         .list-advantage .bg-maroon2 {
             background-color: #BC4852;
         }
+            .list-advantage .bg-maroon2:after {
+                border-bottom-color: #BC4852;
+            }
         .list-advantage .bg-maroon3 {
             background-color: #A3444C;
         }
+            .list-advantage .bg-maroon3:after {
+                border-bottom-color: #A3444C;
+            }
         .list-advantage .bg-maroon4 {
             background-color: #8A3F46;
+        }
+            .list-advantage .bg-maroon4:after {
+                border-bottom-color: #8A3F46;
+            }
+        .list-advantage .second-block {
+            z-index: 8;
+            margin-top: 10px;
+        }
+        .list-advantage .third-block {
+            z-index: 6;
+            margin-top: 20px;
+        }
+        .list-advantage .fourth-block {
+            z-index: 4;
+            margin-top: 30px;
         }
             .list-advantage .wrap-picture {
                 display: table;
@@ -336,6 +372,27 @@ a:hover                        { text-decoration:none; }
             .rubl {
                 font-family: "rubl";
             }
+.box-about-our-work {
+    overflow: hidden;
+    padding: 40px 0;
+    background: url("../images/content/bg_our_work.jpg") no-repeat center;
+    background-size: cover;
+}
+    .box-about-our-work .content {
+        overflow: hidden;
+        height: 100%;
+    }
+        .wrap-list-bonuses {
+            float: left;
+            width: 600px;
+        }
+
+
+
+
+
+
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -377,6 +434,6 @@ a:hover                        { text-decoration:none; }
 .callback-form {
     width: 286px;
     padding: 40px 20px 54px;
-    background: #ffffff;
+    background: #FFFFFF;
     text-align: center;
 }
