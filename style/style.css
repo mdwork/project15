@@ -196,9 +196,11 @@ a:hover                        { text-decoration:none; }
             height: 404px;
         }
 .box-advantages {
-
+    padding-top: 135px;
+    background: #F2F2F2;
 }
     .header-section {
+        text-align: center;
         font: 24px 'PFAgoraSansPro-Bold';
     }
 /*----------------------------------------------------------------------------------*/
