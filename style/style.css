@@ -279,6 +279,7 @@ a:hover                        { text-decoration:none; }
                     display: inline-block;
                     line-height: 22px;
                     border-bottom: 1px dotted #a73e5c;
+                    cursor: pointer;
                 }
             .wrap-form-header .input-text {
                 margin-right: 16px;

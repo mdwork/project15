@@ -306,16 +306,6 @@
 			D.beforeOpen(D, $this);
 			$this.trigger('beforeOpen');
 
-			// Wrap
-			if (D.wrap.css('overflow')!='hidden') {
-				D.wrap.data('arcticmodalOverflow', D.wrap.css('overflow'));
-				var w1 = D.wrap.outerWidth(true);
-				D.wrap.css('overflow', 'hidden');
-				var w2 = D.wrap.outerWidth(true);
-				if (w2!=w1)
-					D.wrap.css('marginRight', (w2 - w1) + 'px');
-			}
-
 			// Скрыть предыдущие оверлеи
 			modals.not($this).each(function() {
 				var d = $(this).data('arcticmodal');
