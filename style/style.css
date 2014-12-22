@@ -50,6 +50,7 @@ a:hover                        { text-decoration:none; }
 }
 
 .btn {
+    position: relative;
     width: 286px;
     height: 40px;
     background: #D44C58;
@@ -63,14 +64,14 @@ a:hover                        { text-decoration:none; }
     -o-transition: all .3s;
     transition: all .3s;
 }
-.btn:hover {
-    background: #E75360;
-}
-.btn:active {
-    background: #C84853;
-}
-
-.box-shadow {
+    .btn:hover {
+        background: #E75360;
+    }
+    .btn:active {
+        background: #C84853;
+    }
+.box-shadow,
+.box-shadow-maroon {
     position: relative;
 }
     .box-shadow:after {
@@ -84,6 +85,23 @@ a:hover                        { text-decoration:none; }
         border-left: 11px solid transparent;
         border-right: 11px solid transparent;
     }
+    .box-shadow-maroon:after {
+        border-top-color: #723B40;
+    }
+.header-form {
+    margin-bottom: 34px;
+    font: 18px "PFAgoraSansPro-Bold", sans-serif;
+    line-height: 24px;
+    color: #a73e5c;
+}
+.input-text {
+    height: 38px;
+    width: 248px;
+    padding: 0 18px;
+    margin-bottom: 20px;
+    border: 1px solid #E0E0E0;
+    font: 400 14px "PFAgoraSansPro-Regular", sans-serif;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FONTS----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -204,6 +222,7 @@ a:hover                        { text-decoration:none; }
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .wrap-main-form {
+    position: relative;
     height: 520px;
     background: url("../images/content/bg_wrap_main_form.jpg") repeat;
 }
@@ -239,10 +258,36 @@ a:hover                        { text-decoration:none; }
             height: 404px;
         }
         .wrap-form-header {
-
+            position: absolute;
+            bottom: -87px;
+            z-index: 5;
+            padding: 31px 20px 18px;
+            background: #ffffff;
+            text-align: center;
         }
+            .wrap-form-header:after {
+                bottom: -11px;
+                width: 916px;
+                border-top: 11px solid #E5E5E5;
+                border-left: 12px solid transparent;
+                border-right: 12px solid transparent;
+            }
+            .wrap-form-header .header-form {
+                font-size: 24px;
+            }
+                .bonus-border {
+                    display: inline-block;
+                    line-height: 22px;
+                    border-bottom: 1px dotted #a73e5c;
+                }
+            .wrap-form-header .input-text {
+                margin-right: 16px;
+            }
+            .wrap-form-header .btn {
+                top: -7px;
+            }
 .box-advantages {
-    padding-top: 135px;
+    padding-top: 145px;
     background: #F2F2F2;
 }
     .header-section {
@@ -263,7 +308,7 @@ a:hover                        { text-decoration:none; }
             background: #D44C58;
             text-align: center;
             color: #fff;
-            font-family: 'PFAgoraSansPro-Light';;
+            font-family: 'PFAgoraSansPro-Light';
         }
         .list-advantage .bg-maroon2 {
             background-color: #BC4852;
@@ -332,19 +377,6 @@ a:hover                        { text-decoration:none; }
 .callback-form {
     width: 286px;
     padding: 40px 20px 54px;
-    background: #FFFFFF;
+    background: #ffffff;
     text-align: center;
 }
-    .header-form {
-        margin-bottom: 34px;
-        font: 18px "PFAgoraSansPro-Bold", sans-serif;
-        line-height: 24px;
-        color: #a73e5c;
-    }
-    .input-text {
-        height: 38px;
-        width: 248px;
-        padding: 0 18px;
-        margin-bottom: 20px;
-        border: 1px solid #E0E0E0;
-    }
