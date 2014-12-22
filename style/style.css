@@ -164,9 +164,37 @@ a:hover                        { text-decoration:none; }
     height: 520px;
     background: url("../images/content/bg_wrap_main_form.jpg") repeat;
 }
-    .wrap-main-form .big-text {
-        
+    .wrap-main-form .content {
+        position: relative;
+        height: 100%;
     }
+        .wrap-main-form .big-text {
+            position: absolute;
+            bottom: 205px;
+            z-index: 5;
+            display: block;
+            width: 430px;
+            font: 54px 'PFAgoraSansPro-Black';
+            color: #fff;
+            line-height: 1.12;
+            text-shadow: 0 1px 0 rgba(196, 61, 41, 1);
+        }
+            .wrap-main-form .big-text:after {
+                content: '';
+                position: absolute;
+                right: -60px;
+                bottom: -115px;
+                width: 121px;
+                height: 158px;
+                background: url("../images/content/big_arrow.png") no-repeat;
+            }
+        .house-picture {
+            position: absolute;
+            right: -92px;
+            top: 50px;
+            width: 760px;
+            height: 404px;
+        }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
