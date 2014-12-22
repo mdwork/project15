@@ -6,4 +6,6 @@ $(document).ready(function(){
         moveSlides: 1,
         slideMargin: 10
     });
+
+    $('.list-regulations-work li:nth-child(4n + 1)').addClass('hide-arrow');
 });

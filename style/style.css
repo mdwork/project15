@@ -106,6 +106,9 @@ a:hover                        { text-decoration:none; }
     border: 1px solid #E0E0E0;
     font: 400 14px "PFAgoraSansPro-Regular", sans-serif;
 }
+.hide-arrow:before {
+    display: none !important;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FONTS----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -517,13 +520,25 @@ a:hover                        { text-decoration:none; }
             margin-bottom: 30px;
             text-align: center;
         }
+            .list-regulations-work li:before {
+                content: '';
+                position: absolute;
+                top: 23px;
+                left: -11px;
+                display: block;
+                width: 22px;
+                height: 8px;
+                background: url("../images/content/arrow_step.png") no-repeat;
+            }
             .list-regulations-work li:after {
                 border-top-color: #723B40;
             }
             .list-regulations-work .number {
+                display: block;
+                margin: 18px 0 12px;
                 font: 18px 'PFAgoraSansPro-Black';
                 color: #fff;
-                opacity: 0.8;
+                opacity: 0.7;
             }
             .list-regulations-work p {
                 font: 18px 'PFAgoraSansPro-Bold';
