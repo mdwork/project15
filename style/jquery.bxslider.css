@@ -16,7 +16,7 @@
 
 .bx-wrapper {
 	position: relative;
-	margin: 0 auto 60px;
+	margin: 0 auto;
 	padding: 0;
 	*zoom: 1;
 }
@@ -51,10 +51,10 @@
 	bottom: -30px;
 	width: 100%;
 }
-
 /* PAGER */
 
 .bx-wrapper .bx-pager {
+	display: none;
 	text-align: center;
 	font-size: .85em;
 	font-family: Arial;

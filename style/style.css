@@ -60,7 +60,6 @@ a:hover                        { text-decoration:none; }
 
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
-    -ms-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s;
 }
@@ -385,7 +384,7 @@ a:hover                        { text-decoration:none; }
                 font: 18px 'PFAgoraSansPro-Bold';
             }
             .rubl {
-                font-family: "rubl";
+                font-family: "rubl", sans-serif;
             }
 .box-about-our-work {
     overflow: hidden;
@@ -510,6 +509,7 @@ a:hover                        { text-decoration:none; }
 }
     .list-regulations-work {
         overflow: hidden;
+        margin-top: 35px;
     }
         .list-regulations-work li {
             position: relative;
@@ -544,7 +544,10 @@ a:hover                        { text-decoration:none; }
                 font: 18px 'PFAgoraSansPro-Bold';
                 color: #fff;
             }
-
+.box-foto-our-work {
+    padding: 35px 0 40px;
+    background: url("../images/content/bg_wrap_main_form.jpg");
+}
 
 .about-company {
     overflow: hidden;
