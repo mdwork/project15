@@ -92,10 +92,12 @@ a:hover                        { text-decoration:none; }
         border-top-color: #723B40;
     }
 .header-form {
+    display: inline-block;
     margin-bottom: 34px;
     font: 18px "PFAgoraSansPro-Bold", sans-serif;
     line-height: 24px;
     color: #a73e5c;
+    text-align: center;
 }
 .input-text {
     height: 38px;
