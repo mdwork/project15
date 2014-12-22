@@ -267,7 +267,10 @@ a:hover                        { text-decoration:none; }
         }
             .wrap-form-header:after {
                 bottom: -11px;
-                width: 916px;
+                width: 100%;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
                 border-top: 11px solid #E5E5E5;
                 border-left: 12px solid transparent;
                 border-right: 12px solid transparent;
@@ -310,7 +313,7 @@ a:hover                        { text-decoration:none; }
             background: #D44C58;
             text-align: center;
             color: #fff;
-            font-family: 'PFAgoraSansPro-Light';
+            font-family: 'PFAgoraSansPro-Light', sans-serif;
 
             -webkit-box-shadow: -10px 0px 0px 0px rgba(102, 48, 53, 1);
             -moz-box-shadow:    -10px 0px 0px 0px rgba(102, 48, 53, 1);
@@ -380,14 +383,53 @@ a:hover                        { text-decoration:none; }
     background-size: cover;
 }
     .box-about-our-work .content {
-        overflow: hidden;
         height: 100%;
     }
+        .box-about-our-work .header-section {
+            margin-bottom: 30px;
+        }
         .wrap-list-bonuses {
             float: left;
             width: 600px;
         }
-
+            .header-red {
+                font: 18px 'PFAgoraSansPro-Bold';
+                color: #d44c58;
+            }
+            .list-bonuses {}
+                .list-bonuses li {
+                    display: table;
+                    width: 100%;
+                    height: 64px;
+                    padding-left: 85px;
+                    margin-bottom: 23px;
+                }
+                .list-bonuses .first {
+                    background: url("../images/content/icon_our_work/icon_our_work1.png") no-repeat left center;
+                }
+                .list-bonuses .second {
+                    background: url("../images/content/icon_our_work/icon_our_work2.png") no-repeat left center;
+                }
+                .list-bonuses .third {
+                    background: url("../images/content/icon_our_work/icon_our_work3.png") no-repeat left center;
+                }
+                .list-bonuses .fourth {
+                    background: url("../images/content/icon_our_work/icon_our_work4.png") no-repeat left center;
+                }
+                    .list-bonuses .wrap-item {
+                        display: table-cell;
+                        width: 100%;
+                        vertical-align: middle;
+                    }
+                        .list-bonuses strong {
+                            display: block;
+                            margin-bottom: 5px;
+                            font: 18px 'PFAgoraSansPro-Bold';
+                        }
+                        .list-bonuses span {
+                            display: block;
+                            font-family: 'PFAgoraSansPro-Light';
+                        }
 
 
 
