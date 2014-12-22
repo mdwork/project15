@@ -80,7 +80,11 @@ a:hover                        { text-decoration:none; }
         bottom: -10px;
         left: 0;
         height: 0;
-        width: 304px;
+        width: 100%;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+
         border-top: 10px solid #E5E5E5;
         border-left: 11px solid transparent;
         border-right: 11px solid transparent;
@@ -316,9 +320,9 @@ a:hover                        { text-decoration:none; }
             color: #fff;
             font-family: 'PFAgoraSansPro-Light', sans-serif;
 
-            -webkit-box-shadow: -10px 0px 0px 0px rgba(102, 48, 53, 1);
-            -moz-box-shadow:    -10px 0px 0px 0px rgba(102, 48, 53, 1);
-            box-shadow:         -10px 0px 0px 0px rgba(102, 48, 53, 1);
+            -webkit-box-shadow: -10px 0 0 0 rgba(102, 48, 53, 1);
+            -moz-box-shadow:    -10px 0 0 0 rgba(102, 48, 53, 1);
+            box-shadow:         -10px 0 0 0 rgba(102, 48, 53, 1);
         }
             .list-advantage li:after {
                 content: '';
@@ -330,20 +334,23 @@ a:hover                        { text-decoration:none; }
                 border-bottom: 11px solid #D44C58;
                 border-left: 10px solid transparent;
             }
-        .list-advantage .bg-maroon2 {
-            background-color: #BC4852;
+        .bg-maroon1 {
+            background-color: #D44C58 !important;
+        }
+        .bg-maroon2 {
+            background-color: #BC4852 !important;
         }
             .list-advantage .bg-maroon2:after {
                 border-bottom-color: #BC4852;
             }
-        .list-advantage .bg-maroon3 {
-            background-color: #A3444C;
+        .bg-maroon3 {
+            background-color: #A3444C !important;
         }
             .list-advantage .bg-maroon3:after {
                 border-bottom-color: #A3444C;
             }
-        .list-advantage .bg-maroon4 {
-            background-color: #8A3F46;
+        .bg-maroon4 {
+            background-color: #8A3F46 !important;
         }
             .list-advantage .bg-maroon4:after {
                 border-bottom-color: #8A3F46;
@@ -432,7 +439,7 @@ a:hover                        { text-decoration:none; }
                         }
                         .list-bonuses span {
                             display: block;
-                            font-family: 'PFAgoraSansPro-Light';
+                            font-family: 'PFAgoraSansPro-Light', sans-serif;
                         }
             .additional-bonus {
                 padding: 17px 10px 20px;
@@ -495,6 +502,24 @@ a:hover                        { text-decoration:none; }
         padding: 10px 20px;
         border: 1px solid #E9E9E9;
     }
+.regulations-work {
+    padding: 25px 0 15px;
+}
+    .list-regulations-work {
+        overflow: hidden;
+    }
+        .list-regulations-work li {
+            position: relative;
+            float: left;
+            width: 235px;
+            height: 120px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .regulations-work .list-regulations-work li:after {
+            border-top-color: #723B40;
+        }
+
 
 .about-company {
     overflow: hidden;
