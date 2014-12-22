@@ -393,10 +393,13 @@ a:hover                        { text-decoration:none; }
             width: 600px;
         }
             .header-red {
+                display: block;
                 font: 18px 'PFAgoraSansPro-Bold';
                 color: #d44c58;
             }
-            .list-bonuses {}
+            .list-bonuses {
+                margin-top: 23px;
+            }
                 .list-bonuses li {
                     display: table;
                     width: 100%;
@@ -429,6 +432,28 @@ a:hover                        { text-decoration:none; }
                         .list-bonuses span {
                             display: block;
                             font-family: 'PFAgoraSansPro-Light';
+                        }
+            .additional-bonus {
+                padding: 17px 10px 20px;
+                margin-top: 22px;
+                border: 1px solid #fff;
+                text-align: center;
+            }
+                .additional-bonus .header-red {
+                    margin-bottom: 15px;
+                }
+                    .additional-bonus li {
+                        display: inline-block;
+                        margin-left: 95px;
+                        font: 18px 'PFAgoraSansPro-Black';
+                    }
+                    .additional-bonus li:first-child {
+                        margin-left: 0;
+                    }
+                        .additional-bonus .number {
+                            display: inline-block;
+                            margin-right: 15px;
+                            color: #d44c58;
                         }
 
 
