@@ -60,7 +60,6 @@ a:hover                        { text-decoration:none; }
          url('../fonts/pfagorasanspro-medium.svg#pf_agora_sans_promedium') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'PFAgoraSansPro-Bold';
@@ -71,7 +70,6 @@ a:hover                        { text-decoration:none; }
          url('../fonts/pfagorasanspro-bold.svg#pf_agora_sans_probold') format('svg');
     font-weight: bold;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'PFAgoraSansPro-Black';
@@ -82,7 +80,6 @@ a:hover                        { text-decoration:none; }
          url('../fonts/pfagorasanspro-black.svg#pf_agora_sans_problack') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'PFAgoraSansPro-Light';
@@ -290,3 +287,56 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.callback-form {
+    width: 286px;
+    padding: 40px 20px 54px;
+    background: #FFFFFF;
+    text-align: center;
+}
+.header-form {
+    margin-bottom: 34px;
+    font: 18px "PFAgoraSansPro-Bold", sans-serif;
+    line-height: 24px;
+    color: #a73e5c;
+}
+.input-text {
+    height: 38px;
+    width: 248px;
+    padding: 0 18px;
+    margin-bottom: 20px;
+    border: 1px solid #E0E0E0;
+}
+.btn {
+    width: 286px;
+    height: 40px;
+    background: #D44C58;
+    border: none;
+    font: 18px "PFAgoraSansPro-Black", sans-serif;
+    color: #ffffff;
+
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.btn:hover {
+    background: #E75360;
+}
+.btn:active {
+    background: #C84853;
+}
+.box-shadow {
+    position: relative;
+}
+    .box-shadow:after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        height: 0;
+        width: 304px;
+        border-top: 10px solid #E5E5E5;
+        border-left: 11px solid transparent;
+        border-right: 11px solid transparent;
+    }
