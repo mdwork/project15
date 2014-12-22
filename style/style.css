@@ -511,14 +511,24 @@ a:hover                        { text-decoration:none; }
         .list-regulations-work li {
             position: relative;
             float: left;
-            width: 235px;
+            width: 196px;
             height: 120px;
+            padding: 0 20px 0 19px;
             margin-bottom: 30px;
             text-align: center;
         }
-        .regulations-work .list-regulations-work li:after {
-            border-top-color: #723B40;
-        }
+            .list-regulations-work li:after {
+                border-top-color: #723B40;
+            }
+            .list-regulations-work .number {
+                font: 18px 'PFAgoraSansPro-Black';
+                color: #fff;
+                opacity: 0.8;
+            }
+            .list-regulations-work p {
+                font: 18px 'PFAgoraSansPro-Bold';
+                color: #fff;
+            }
 
 
 .about-company {
