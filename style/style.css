@@ -327,7 +327,20 @@ a:hover                        { text-decoration:none; }
             .rubl {
                 font-family: "rubl";
             }
-.box-
+.box-about-our-work {
+    overflow: hidden;
+    padding: 40px 0;
+    background: url("../images/content/bg_our_work.jpg") no-repeat center;
+    background-size: cover;
+}
+    .box-about-our-work .content {
+        overflow: hidden;
+        height: 100%;
+    }
+        .wrap-list-bonuses {
+            float: left;
+            width: 600px;
+        }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
