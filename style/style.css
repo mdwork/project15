@@ -597,7 +597,28 @@ a:hover                        { text-decoration:none; }
     }
         .list-social-links li {
             float: left;
+            margin-left: 10px;
         }
+            .list-social-links a {
+                display: block;
+                height: 14px;
+                background: url("../images/footer/social_sprite.png") no-repeat;
+                text-indent: -9999px;
+            }
+            .list-social-links a:hover {
+                opacity: 0.8;
+            }
+            .vk a {
+                width: 10px;
+            }
+            .fb a {
+                width: 7px;
+                background-position: -22px 0;
+            }
+            .tw a {
+                width: 13px;
+                background-position: -41px 0;
+            }
     .wrap-address {
         text-align: center;
     }
