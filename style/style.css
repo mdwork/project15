@@ -498,21 +498,40 @@ a:hover                        { text-decoration:none; }
             background: url("../images/content/icon_ok.png") no-repeat;
         }
 .calculator-box {
+    overflow: hidden;
     padding: 35px 0 55px;
 }
     .calculator {
+        overflow: hidden;
         width: 550px;
         margin: 0 auto;
         padding: 10px 20px;
         border: 1px solid #E9E9E9;
     }
         .calculator li {
+            float: left;
             font-family: 'PFAgoraSansPro-Light';
         }
-            .name-parametr {
-                font: 18px 'PFAgoraSansPro-Black';;
-                color: #a73e5c;
+            .calculator label {
+                display: block;
+                width: 148px;
+                padding: 13px 10px;
+                border: 1px solid #E0E0E0;
             }
+                .name-parametr {
+                    font: 18px 'PFAgoraSansPro-Black';;
+                    color: #a73e5c;
+                }
+                .list-choose-parametr {
+                    overflow: hidden;
+                }
+                    .list-choose-parametr li {
+                        margin-left: 20px;
+                    }
+                    .list-choose-parametr li:first-child {
+                        margin-left: 0;
+                    }
+
 .regulations-work {
     padding: 25px 0 15px;
 }
