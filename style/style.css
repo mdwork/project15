@@ -232,7 +232,7 @@ a:hover                        { text-decoration:none; }
                     color: #d44c58;
                     text-decoration: none;
                 }
-                .main-nav li.active a,
+                .main-nav li.current-menu-item a,
                 .main-nav a:hover {
                     color: #303030;
                 }
