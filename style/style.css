@@ -794,10 +794,26 @@ blockquote {
             .form-map .header-form {
                 margin-bottom: 15px;
             }
-            .form-map textarea {
-                height: 118px;
-                padding: 5px 18px;
-                resize: none;
+                .form-map textarea {
+                    height: 118px;
+                    padding: 5px 18px;
+                    resize: none;
+                }
+            .toogle-form {
+                position: absolute;
+                top: 47%;
+                left: -30px;
+                display: block;
+                width: 30px;
+                height: 30px;
+                text-indent: -9999px;
+                background: #fff url("../images/content/arrow_toggle_active.png") no-repeat center;
+            }
+            .toogle-form:hover {
+                background-color: #f2f2f2;
+            }
+            .toogle-form.active {
+                background-image: url("../images/content/arrow_toggle_hide.png");
             }
 
 /*----------------------------------------------------------------------------------*/
