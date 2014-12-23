@@ -506,7 +506,9 @@ a:hover                        { text-decoration:none; }
         padding: 10px 20px;
         border: 1px solid #E9E9E9;
     }
-        .calculator li {}
+        .calculator li {
+            font-family: 'PFAgoraSansPro-Light';
+        }
             .name-parametr {
                 font: 18px 'PFAgoraSansPro-Black';;
                 color: #a73e5c;
