@@ -550,7 +550,9 @@ a:hover                        { text-decoration:none; }
     padding: 35px 0 40px;
     background: url("../images/content/bg_wrap_main_form.jpg");
 }
-
+    .box-foto-our-work .header-section {
+        margin-bottom: 20px;
+    }
 .about-company {
     overflow: hidden;
     padding: 35px 0;
