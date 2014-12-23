@@ -51,8 +51,10 @@ a:hover                        { text-decoration:none; }
 
 .btn {
     position: relative;
+    display: block;
     width: 286px;
     height: 40px;
+    margin: 0 auto;
     background: #D44C58;
     border: none;
     font: 18px "PFAgoraSansPro-Black", sans-serif;
@@ -499,13 +501,12 @@ a:hover                        { text-decoration:none; }
         }
 .calculator-box {
     overflow: hidden;
-    padding: 35px 0 55px;
+    padding: 35px 0 15px;
 }
     .calculator-box .header-section {
         margin-bottom: 35px;
     }
     .calculator {
-        overflow: hidden;
         width: 550px;
         margin: 0 auto;
         padding: 10px 20px;
@@ -514,6 +515,13 @@ a:hover                        { text-decoration:none; }
         .calculator li {
             float: left;
             font-family: 'PFAgoraSansPro-Light';
+        }
+        .calculator > li {
+            margin-bottom: 35px;
+        }
+        .calculator .last {
+            float: none;
+            margin-bottom: 20px;
         }
             .calculator label {
                 display: table;
@@ -526,6 +534,8 @@ a:hover                        { text-decoration:none; }
                 border-color: #D44C58;
             }
                 .name-parametr {
+                    display: block;
+                    margin-bottom: 15px;
                     font: 18px 'PFAgoraSansPro-Black';;
                     color: #a73e5c;
                 }
