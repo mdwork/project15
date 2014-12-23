@@ -2,7 +2,7 @@
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
 /*----------------------------------------------------------------------------------*/
 html,body                       { width:100%; height:100%; }
-body                            { padding:0; margin:0; font:14px 'PFAgoraSansPro-Regular', sans-serif; background:#fff; color:#303030; }
+body                            { padding:0; margin:0; font:14px 'PFAgoraSansPro-Regular', sans-serif; background:#F2F2F2; color:#303030; }
 div,menu,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,legend,label,select,input,button,textarea {
 	padding:0;
 	margin:0;
@@ -168,6 +168,9 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.home-page {
+    background: #fff;
+}
 .wrap {
     min-height: 100%;
 }
@@ -180,6 +183,9 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.wrap-header {
+    background: #fff;
+}
 .main-header {
     overflow: hidden;
     padding-bottom: 15px;
@@ -224,10 +230,37 @@ a:hover                        { text-decoration:none; }
                     color: #d44c58;
                     text-decoration: none;
                 }
-                .main-nav li.active,
+                .main-nav li.active a,
                 .main-nav a:hover {
                     color: #303030;
                 }
+    .bread-crumbs {
+        width: 940px;
+        margin: 0 auto;
+    }
+        .bread-crumbs li {
+            float: left;
+            margin-left: 10px;
+            padding-left: 20px;
+            background: url("../images/header/arrow_bread.png") no-repeat 0 7px;
+        }
+        .bread-crumbs li:first-child {
+            margin-left: 0;
+            padding-left: 0;
+            background: none;
+        }
+            .bread-crumbs li a {
+                color: #a0a0a0;
+                text-decoration: none;
+                font: 14px 'PFAgoraSansPro-Light';;
+            }
+            .bread-crumbs li a:hover {
+                color: #303030;
+            }
+            .bread-crumbs li:last-child a {
+                pointer-events: none;
+                color: #303030;
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -698,6 +731,8 @@ a:hover                        { text-decoration:none; }
     margin-top: -104px;
     padding: 23px 0 42px;
     font-family: 'PFAgoraSansPro-Light', sans-serif;
+}
+.home-page .footer {
     border-top: 1px solid #E5E5E5;
 }
     .copyright {
