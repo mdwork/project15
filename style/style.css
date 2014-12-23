@@ -768,14 +768,37 @@ blockquote {
             position: absolute;
             z-index: 5;
             top: 140px;
-            left: 25px;
+            left: 35px;
+            padding: 15px 22px;
+            font: 16px 'PFAgoraSansPro-Light';
+            background: #FFDD81;
+            text-align: center;
         }
+            .address-map span {
+                display: block;
+                margin-bottom: 5px;
+            }
+            .address-map .tell {
+                font: 24px 'PFAgoraSansPro-Black';
+            }
+            .address-map .mail {
+                font: 16px 'PFAgoraSansPro-Regular';
+            }
         .form-map {
             position: absolute;
             top: 0;
             right: 0;
-            height: 100%;
+            height: 321px;
+            padding-top: 25px !important;
         }
+            .form-map .header-form {
+                margin-bottom: 15px;
+            }
+            .form-map textarea {
+                height: 118px;
+                padding: 5px 18px;
+                resize: none;
+            }
 
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/

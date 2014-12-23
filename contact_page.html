@@ -52,7 +52,7 @@
                 <address class="address-map">
                     <span class="street">г. Калининград, ул. Есенина, 30, оф. 122</span>
                     <span class="tell">8 800 555-18-56</span>
-                    <a href="mailto:info@hors.ru">info@hors.ru</a>
+                    <a class="mail" href="mailto:info@hors.ru">info@hors.ru</a>
                 </address>
 
                 <form class="callback-form form-map" name="feedback" action="#">
@@ -62,13 +62,19 @@
                         <ul>
                             <li>
                                 <label>
-                                    <input class="input-text" type="text" name="name" value="" placeholder="Представьтесь">
+                                    <input class="input-text" type="text" name="name" placeholder="Представьтесь">
                                 </label>
                             </li>
 
                             <li>
                                 <label>
-                                    <input class="input-text" type="tel" name="tell" value="" placeholder="электронная почта">
+                                    <input class="input-text" type="tel" name="tell" placeholder="Электронная почта">
+                                </label>
+                            </li>
+
+                            <li>
+                                <label>
+                                    <textarea class="input-text" name="tell" placeholder="Сообщение"></textarea>
                                 </label>
                             </li>
 
@@ -77,8 +83,10 @@
                             </li>
                         </ul>
 
-                        <button class="btn feedback">Заказать</button>
+                        <button class="btn feedback">Отправить</button>
                     </fieldset>
+
+                    <span class="toogle-form"></span>
                 </form>
             </div>
         </section>
