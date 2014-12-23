@@ -242,6 +242,9 @@ blockquote {
                 .main-nav a:hover {
                     color: #303030;
                 }
+                .current-menu-item a {
+                    pointer-events: none;
+                }
     .bread-crumbs {
         overflow: hidden;
         width: 940px;
@@ -820,8 +823,18 @@ blockquote {
                     background-image: url("../images/content/arrow_toggle_active.png");
                 }
 .btn-show {
+    width: 160px;
+    padding: 10px 0;
     font: 16px 'PFAgoraSansPro-Regular';
     background: #FFDD81;
+    border: none;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.btn-show:hover {
+    background: #FFCE47;
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
