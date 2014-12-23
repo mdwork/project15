@@ -176,7 +176,7 @@ blockquote {
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-.home-page {
+.home {
     background: #fff;
 }
 .wrap {
@@ -831,7 +831,7 @@ blockquote {
     padding: 23px 0 42px;
     font-family: 'PFAgoraSansPro-Light', sans-serif;
 }
-.home-page .footer {
+.home .footer {
     border-top: 1px solid #E5E5E5;
 }
     .copyright {
