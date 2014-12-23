@@ -3,7 +3,7 @@
 /*----------------------------------------------------------------------------------*/
 html,body                       { width:100%; height:100%; }
 body                            { padding:0; margin:0; font:14px 'PFAgoraSansPro-Regular', sans-serif; background:#F2F2F2; color:#303030; }
-div,menu,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,legend,label,select,input,button,textarea {
+div,blockquote,menu,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,legend,label,select,input,button,textarea {
 	padding:0;
 	margin:0;
 	outline:none;
@@ -187,7 +187,7 @@ a:hover                        { text-decoration:none; }
 .wrap-header {
     background: #fff;
 }
-.main-header {
+.main-header-box {
     overflow: hidden;
     padding-bottom: 15px;
 }
@@ -726,9 +726,31 @@ a:hover                        { text-decoration:none; }
 }
     .main-header {
         display: block;
+        margin-bottom: 30px;
         text-align: center;
         font: 30px 'PFAgoraSansPro-Bold';;
     }
+    .main-picture-page {
+        width: 620px;
+        margin: 0 auto;
+        text-align: center;
+    }
+        .main-picture-page img {
+            vertical-align: top;
+        }
+        .main-picture-page figcaption {
+            padding: 10px 60px;
+            text-align: left;
+            background: #FFDD81;
+            font-style: italic;
+        }
+    .wrap-content-inner-page {
+        width: 500px;
+        margin: 0 auto;
+    }
+        .wrap-content-inner-page p {
+            margin-bottom: 20px;
+        }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
