@@ -498,7 +498,7 @@ a:hover                        { text-decoration:none; }
             background: url("../images/content/icon_ok.png") no-repeat;
         }
 .calculator-box {
-
+    padding: 35px 0 55px;
 }
     .calculator {
         width: 550px;
@@ -506,6 +506,11 @@ a:hover                        { text-decoration:none; }
         padding: 10px 20px;
         border: 1px solid #E9E9E9;
     }
+        .calculator li {}
+            .name-parametr {
+                font: 18px 'PFAgoraSansPro-Black';;
+                color: #a73e5c;
+            }
 .regulations-work {
     padding: 25px 0 15px;
 }
@@ -525,7 +530,7 @@ a:hover                        { text-decoration:none; }
             .list-regulations-work li:before {
                 content: '';
                 position: absolute;
-                top: 23px;
+                top: 26px;
                 left: -11px;
                 display: block;
                 width: 22px;
@@ -542,6 +547,23 @@ a:hover                        { text-decoration:none; }
                 color: #fff;
                 opacity: 0.7;
             }
+                .list-regulations-work .number:before,
+                .list-regulations-work .number:after {
+                    content: '';
+                    position: relative;
+                    top: -5px;
+                    display: inline-block;
+                    width: 40px;
+                    height: 2px;
+                    background: #fff;
+                    opacity: 0.8;
+                }
+                .list-regulations-work .number:before {
+                    margin-right: 15px;
+                }
+                .list-regulations-work .number:after {
+                    margin-left: 15px;
+                }
             .list-regulations-work p {
                 font: 18px 'PFAgoraSansPro-Bold';
                 color: #fff;
