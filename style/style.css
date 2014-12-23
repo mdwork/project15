@@ -557,7 +557,7 @@ blockquote {
     }
         .calculator li {
             float: left;
-            font-family: 'PFAgoraSansPro-Light';
+            font-family: 'PFAgoraSansPro-Light', sans-serif;
         }
         .calculator > li {
             margin-bottom: 35px;
@@ -791,7 +791,6 @@ blockquote {
             height: 321px;
         }
             .form-map {
-                display: none;
                 height: 321px !important;
                 padding: 25px 20px 54px !important;
             }
