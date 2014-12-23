@@ -536,9 +536,12 @@ a:hover                        { text-decoration:none; }
                     .list-choose-parametr li:first-child {
                         margin-left: 0;
                     }
-                        .list-choose-parametr .wrap-input {
+                        .list-choose-parametr span {
                             display: table-cell;
                             vertical-align: middle;
+                        }
+                        .list-choose-parametr .wrap-input {
+                            width: 20px;
                         }
                             .list-choose-parametr .wrap-input:before {
                                 content: '';
@@ -554,6 +557,26 @@ a:hover                        { text-decoration:none; }
                                 position: absolute;
                                 left: -9999px;
                             }
+                            .list-choose-parametr .text {
+                                display: inline-block;
+                                width: 100%;
+                            }
+                        .list-choose-parametr .first {
+                            background: url("../images/content/icon_house1.png") no-repeat;
+                        }
+                        .list-choose-parametr .second {
+                            background: url("../images/content/icon_house2.png") no-repeat;
+                        }
+                        .list-choose-parametr .third {
+                            background: url("../images/content/icon_house3.png") no-repeat;
+                        }
+                        .list-choose-parametr .first,
+                        .list-choose-parametr .second,
+                        .list-choose-parametr .third {
+                            padding-top: 50px;
+                            text-align: center;
+                            background-position: top center;
+                        }
 
 .regulations-work {
     padding: 25px 0 15px;
