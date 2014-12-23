@@ -513,10 +513,14 @@ a:hover                        { text-decoration:none; }
             font-family: 'PFAgoraSansPro-Light';
         }
             .calculator label {
-                display: block;
+                display: table;
                 width: 148px;
                 padding: 13px 10px;
                 border: 1px solid #E0E0E0;
+                cursor: pointer;
+            }
+            .calculator .active label {
+                border-color: #D44C58;
             }
                 .name-parametr {
                     font: 18px 'PFAgoraSansPro-Black';;
@@ -526,11 +530,21 @@ a:hover                        { text-decoration:none; }
                     overflow: hidden;
                 }
                     .list-choose-parametr li {
+                        width: 170px;
                         margin-left: 20px;
                     }
                     .list-choose-parametr li:first-child {
                         margin-left: 0;
                     }
+                        .list-choose-parametr .wrap-input {
+                            display: table-cell;
+                            vertical-align: middle;
+                        }
+                            .list-choose-parametr .wrap-input input {
+                                display: block;
+                                width: 20px;
+                                height: 20px;
+                            }
 
 .regulations-work {
     padding: 25px 0 15px;
