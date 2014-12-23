@@ -113,6 +113,13 @@ a:hover                        { text-decoration:none; }
 .hide-arrow:before {
     display: none !important;
 }
+blockquote {
+    padding: 20px;
+    margin-bottom: 25px;
+    border-top: 5px solid #FFDD81;
+    background: #F2F2F2;
+    line-height: 1.75;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FONTS----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -732,14 +739,14 @@ a:hover                        { text-decoration:none; }
     }
     .main-picture-page {
         width: 620px;
-        margin: 0 auto;
+        margin: 0 auto 25px;
         text-align: center;
     }
         .main-picture-page img {
             vertical-align: top;
         }
         .main-picture-page figcaption {
-            padding: 10px 60px;
+            padding: 20px 60px;
             text-align: left;
             background: #FFDD81;
             font-style: italic;
