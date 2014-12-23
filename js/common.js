@@ -17,4 +17,8 @@ $(document).ready(function(){
             $this.parent().addClass('active');
         }
     });
+
+    $(document).on('click', '.modal-btn', function(){
+        $('#small-modal').arcticmodal();
+    });
 });

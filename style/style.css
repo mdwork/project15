@@ -730,7 +730,7 @@ blockquote {
                 margin-bottom: 10px;
             }
 .contact-inner {
-    padding: 30px 0;
+    padding: 30px 40px 40px;
 }
     .main-header {
         display: block;
@@ -758,6 +758,23 @@ blockquote {
     }
         .wrap-content-inner-page p {
             margin-bottom: 20px;
+        }
+    .wrap-map {
+        position: relative;
+        height: 400px;
+        border: 1px solid #E9E9E9;
+    }
+        .address-map {
+            position: absolute;
+            z-index: 5;
+            top: 140px;
+            left: 25px;
+        }
+        .form-map {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
         }
 
 /*----------------------------------------------------------------------------------*/
@@ -817,7 +834,6 @@ blockquote {
                 display: block;
                 text-align: left;
             }
-
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
 /*----------------------------------------------------------------------------------*/

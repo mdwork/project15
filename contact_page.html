@@ -47,11 +47,39 @@
             <h1 class="main-header">Контактная информация</h1>
 
             <div class="wrap-map">
-                <address>
+                <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=z0_HMsCwvYk60FEZREurZZPCn_CvwYms&width=100%&height=400"></script>
+
+                <address class="address-map">
                     <span class="street">г. Калининград, ул. Есенина, 30, оф. 122</span>
                     <span class="tell">8 800 555-18-56</span>
-                    <a href="mailto:info@hors.ru"></a>
+                    <a href="mailto:info@hors.ru">info@hors.ru</a>
                 </address>
+
+                <form class="callback-form form-map" name="feedback" action="#">
+                    <fieldset>
+                        <legend class="header-form">Задайте вопрос</legend>
+
+                        <ul>
+                            <li>
+                                <label>
+                                    <input class="input-text" type="text" name="name" value="" placeholder="Представьтесь">
+                                </label>
+                            </li>
+
+                            <li>
+                                <label>
+                                    <input class="input-text" type="tel" name="tell" value="" placeholder="электронная почта">
+                                </label>
+                            </li>
+
+                            <li>
+                                <input type="hidden" name="bot-field" value="">
+                            </li>
+                        </ul>
+
+                        <button class="btn feedback">Заказать</button>
+                    </fieldset>
+                </form>
             </div>
         </section>
     </div><!--end WRAP-->
@@ -113,12 +141,5 @@
     <script type="text/javascript" src="feedback/js/jquery.jgrowl.js"></script>
     <script type="text/javascript" src="feedback/js/jquery.arcticmodal.js"></script>
     <script type="text/javascript" src="feedback/js/feedback.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $(document).on('click', '.modal-btn', function(){
-                $('#small-modal').arcticmodal();
-            });
-        });
-    </script>
 </body>
 </html>
