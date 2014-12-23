@@ -48,7 +48,9 @@ a:hover                        { text-decoration:none; }
 	max-width: 940px;
 	margin: 0 auto;
 }
-
+.bg-white {
+    background: #fff;
+}
 .btn {
     position: relative;
     display: block;
@@ -235,8 +237,9 @@ a:hover                        { text-decoration:none; }
                     color: #303030;
                 }
     .bread-crumbs {
+        overflow: hidden;
         width: 940px;
-        margin: 0 auto;
+        margin: 22px auto 0;
     }
         .bread-crumbs li {
             float: left;
@@ -261,6 +264,11 @@ a:hover                        { text-decoration:none; }
                 pointer-events: none;
                 color: #303030;
             }
+    .main-header {
+        display: block;
+        text-align: center;
+        font: 30px 'PFAgoraSansPro-Bold';;
+    }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
