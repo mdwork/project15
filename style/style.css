@@ -341,6 +341,7 @@ blockquote {
             }
             .wrap-form-header .btn {
                 top: -7px;
+                display: inline-block;
             }
 .box-advantages {
     padding: 145px 0 30px;
@@ -728,7 +729,7 @@ blockquote {
             .list-columns p {
                 margin-bottom: 10px;
             }
-.about-company-page {
+.contact-inner {
     padding: 30px 0;
 }
     .main-header {
@@ -758,6 +759,7 @@ blockquote {
         .wrap-content-inner-page p {
             margin-bottom: 20px;
         }
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
