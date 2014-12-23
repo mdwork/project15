@@ -501,6 +501,9 @@ a:hover                        { text-decoration:none; }
     overflow: hidden;
     padding: 35px 0 55px;
 }
+    .calculator-box .header-section {
+        margin-bottom: 35px;
+    }
     .calculator {
         overflow: hidden;
         width: 550px;
@@ -526,14 +529,17 @@ a:hover                        { text-decoration:none; }
                     font: 18px 'PFAgoraSansPro-Black';;
                     color: #a73e5c;
                 }
-                .list-choose-parametr {
+                .list-choose-parametr,
+                .list-additional-parametrs {
                     overflow: hidden;
                 }
-                    .list-choose-parametr li {
+                    .list-choose-parametr li,
+                    .list-additional-parametrs li {
                         width: 170px;
                         margin-left: 20px;
                     }
-                    .list-choose-parametr li:first-child {
+                    .list-choose-parametr li:first-child,
+                    .list-additional-parametrs li:first-child {
                         margin-left: 0;
                     }
                         .list-choose-parametr span {
@@ -560,6 +566,7 @@ a:hover                        { text-decoration:none; }
                             .list-choose-parametr .text {
                                 display: inline-block;
                                 width: 100%;
+                                text-align: center;
                             }
                         .list-choose-parametr .first {
                             background: url("../images/content/icon_house1.png") no-repeat;
@@ -577,6 +584,11 @@ a:hover                        { text-decoration:none; }
                             text-align: center;
                             background-position: top center;
                         }
+
+                    .list-additional-parametrs input {
+                        width: 100%;
+                        border: none;
+                    }
 
 .regulations-work {
     padding: 25px 0 15px;
