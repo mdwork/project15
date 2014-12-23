@@ -501,7 +501,7 @@ a:hover                        { text-decoration:none; }
         }
 .calculator-box {
     overflow: hidden;
-    padding: 35px 0 15px;
+    padding: 35px 0 55px;
 }
     .calculator-box .header-section {
         margin-bottom: 35px;
@@ -601,7 +601,8 @@ a:hover                        { text-decoration:none; }
                     }
 
 .regulations-work {
-    padding: 25px 0 15px;
+    padding: 35px 0 20px;
+    background: #F2F2F2;
 }
     .list-regulations-work {
         overflow: hidden;
