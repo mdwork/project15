@@ -540,10 +540,19 @@ a:hover                        { text-decoration:none; }
                             display: table-cell;
                             vertical-align: middle;
                         }
-                            .list-choose-parametr .wrap-input input {
+                            .list-choose-parametr .wrap-input:before {
+                                content: '';
                                 display: block;
                                 width: 20px;
                                 height: 20px;
+                                background: url("../images/content/input_status.png") no-repeat;
+                            }
+                            .list-choose-parametr .active .wrap-input:before {
+                                background: url("../images/content/input_status_active.png") no-repeat;
+                            }
+                            .list-choose-parametr .wrap-input input {
+                                position: absolute;
+                                left: -9999px;
                             }
 
 .regulations-work {
