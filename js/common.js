@@ -21,4 +21,14 @@ $(document).ready(function(){
     $(document).on('click', '.modal-btn', function(){
         $('#small-modal').arcticmodal();
     });
+
+    $('.toogle-form').on('click', function(){
+        $('.form-map').toggle('slide');
+        if($(this).hasClass('active')) {
+            $(this).removeClass('active');
+        }
+        else {
+            $(this).addClass('active');
+        }
+    });
 });
