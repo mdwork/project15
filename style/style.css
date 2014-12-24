@@ -747,15 +747,15 @@ blockquote {
             margin-bottom: 8px;
             font: 30px 'PFAgoraSansPro-Bold';
         }
-    .main-picture-page {
+    .wrap-main-picture-page {
         width: 620px;
         margin: 0 auto 25px;
         text-align: center;
     }
-        .main-picture-page img {
+        .wrap-main-picture-page img {
             vertical-align: top;
         }
-        .main-picture-page figcaption {
+        .wrap-main-picture-page figcaption {
             padding: 20px 60px;
             text-align: left;
             background: #FFDD81;
