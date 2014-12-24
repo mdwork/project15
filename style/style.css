@@ -836,18 +836,21 @@ blockquote {
             width: 420px;
             margin: 0 18px 55px 0;
         }
-            .list-articles img {
-                float: left;
-                width: 160px;
-                height: 120px;
-                margin-right: 20px;
+            .list-articles a {
+                text-decoration: none;
             }
-            .list-articles h2 {
-                margin: 12px 0;
-                color: #d44c58;
-                font-size: 16px;
-                font-weight: 400;
-            }
+                .list-articles img {
+                    float: left;
+                    width: 160px;
+                    height: 120px;
+                    margin-right: 20px;
+                }
+                .list-articles h2 {
+                    margin: 12px 0;
+                    color: #d44c58;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
             .date-article {
                 padding-left: 20px;
                 color: #acacac;
