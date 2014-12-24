@@ -910,26 +910,66 @@ blockquote {
         color: #fff;
         background: #D44C58;
     }
-        .objects-page .wrap-picture {
-            position: relative;
-            float: left;
-            margin-right: 20px;
+        .objects-page li article {
+            overflow: hidden;
         }
-            .objects-page .wrap-picture img {
-                display: block;
-            }
-            .objects-page .wrap-picture .area {
-                position: absolute;
-                top: 15px;
-                right: 15px;
-                padding: 5px 8px 6px;
-                background: rgba(0, 0, 0, .3);
-            }
-            .objects-page .wrap-picture .area:after {
-                content: '2';
+            .objects-page .wrap-picture {
                 position: relative;
-                top: -5px;
-                font-size: 9px;
+                float: left;
+                margin-right: 20px;
+            }
+                .objects-page .wrap-picture:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top: 47%;
+                    width: 0;
+                    height: 0;
+                    border-top: 8px solid transparent;
+                    border-right: 10px solid #D44C58;
+                    border-bottom: 8px solid transparent;
+                }
+                .objects-page .wrap-picture img {
+                    display: block;
+                }
+                .objects-page .wrap-picture .area {
+                    position: absolute;
+                    top: 15px;
+                    right: 15px;
+                    padding: 5px 8px 6px;
+                    background: rgba(0, 0, 0, .3);
+                }
+                    .objects-page .wrap-picture .area:after {
+                        content: '2';
+                        position: relative;
+                        top: -5px;
+                        font-size: 9px;
+                    }
+            .objects-page h2 {
+                margin-top: 20px;
+                font: 18px 'PFAgoraSansPro-Bold';;
+            }
+            .objects-page .price {
+                display: block;
+                margin-top: 18px;
+                font-size: 18px;
+            }
+            a.link-more {
+                display: inline-block;
+                padding: 6px 15px 7px;
+                margin-top: 8px;
+                color: #d44c58;
+                background: #FFDD81;
+            }
+            a.link-more:hover {
+                color: #fff;
+                background: #303030;
+
+                -webkit-transition: all .3s;
+                -moz-transition: all .3s;
+                -o-transition: all .3s;
+                transition: all .3s;
             }
 
 .btn-show {
