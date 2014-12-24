@@ -344,8 +344,8 @@ blockquote {
                 margin-right: 16px;
             }
             .wrap-form-header .btn {
-                top: -7px;
                 display: inline-block;
+                vertical-align: top;
             }
 .box-advantages {
     padding: 145px 0 30px;
@@ -1011,6 +1011,26 @@ blockquote {
                             width: 212px;
                             height: 151px;
                         }
+.position-form {
+    position: relative;
+    height: 137px;
+    width: 940px;
+    margin-left: -40px;
+}
+    .position-form .wrap-form-header {
+        position: relative;
+        bottom: auto;
+        padding: 17px 20px 11px;
+        background: #D44C58;
+    }
+        .wrap-form-header .header-form {
+            margin-bottom: 23px;
+            color: #fff;
+        }
+            .wrap-form-header .btn {
+                border: 2px solid #fff;
+            }
+
         .list-more-objects {
             width: 520px;
         }
