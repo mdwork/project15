@@ -843,13 +843,13 @@ blockquote {
             .list-articles a {
                 text-decoration: none;
             }
-                .list-articles img {
+                .articles-page img {
                     float: left;
                     width: 160px;
                     height: 120px;
                     margin-right: 20px;
                 }
-                .list-articles h2 {
+                .articles-page h2 {
                     margin: 12px 0;
                     color: #d44c58;
                     font-size: 16px;
@@ -861,7 +861,7 @@ blockquote {
                 font: 14px 'PFAgoraSansPro-Light';
                 background: url("../images/content/icon_clock.png") 0 2px no-repeat;
             }
-            .list-articles p {
+            .articles-page p {
                 margin-top: 25px;
             }
     .more-articles {
