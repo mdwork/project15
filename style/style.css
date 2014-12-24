@@ -906,6 +906,32 @@ blockquote {
                     text-decoration: underline;
                 }
 
+    .objects-page li {
+        color: #fff;
+        background: #D44C58;
+    }
+        .objects-page .wrap-picture {
+            position: relative;
+            float: left;
+            margin-right: 20px;
+        }
+            .objects-page .wrap-picture img {
+                display: block;
+            }
+            .objects-page .wrap-picture .area {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                padding: 5px 8px 6px;
+                background: rgba(0, 0, 0, .3);
+            }
+            .objects-page .wrap-picture .area:after {
+                content: '2';
+                position: relative;
+                top: -5px;
+                font-size: 9px;
+            }
+
 .btn-show {
     display: block;
     width: 160px;
@@ -920,7 +946,8 @@ blockquote {
     transition: all .3s;
 }
 .btn-show:hover {
-    background: #FFCE47;
+    color: #fff;
+    background: #303030;
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
