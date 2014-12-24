@@ -739,11 +739,14 @@ blockquote {
     padding: 30px 40px 40px;
 }
     .main-header {
-        display: block;
         margin-bottom: 30px;
         text-align: center;
-        font: 30px 'PFAgoraSansPro-Bold';;
     }
+        .main-header h1 {
+            display: block;
+            margin-bottom: 8px;
+            font: 30px 'PFAgoraSansPro-Bold';
+        }
     .main-picture-page {
         width: 620px;
         margin: 0 auto 25px;
