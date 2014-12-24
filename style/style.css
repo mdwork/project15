@@ -880,8 +880,23 @@ blockquote {
             margin-left: -25px;
         }
             .list-more-articles li {
+                position: relative;
                 margin-bottom: 6px;
                 padding-left: 25px;
+            }
+            .list-more-articles li:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 7px;
+                left: 0;
+                width: 5px;
+                height: 5px;
+                background: #DBDBDB;
+
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                border-radius: 10px;
             }
                 .list-more-articles a {
                     color: #d44c58;
