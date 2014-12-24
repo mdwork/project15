@@ -16,6 +16,7 @@ textarea                       { vertical-align:top; }
 :focus                         { outline:none; }
 input[type=submit]             { cursor:pointer; }
 img, fieldset                  { border:0; }
+img                            { vertical-align: top; }
 table                          { border-collapse:collapse; border-spacing:0; }
 a:link, a:visited              { font:14px 'PFAgoraSansPro-Regular', sans-serif; color:#000; text-decoration:underline; }
 a:hover                        { text-decoration:none; }
@@ -203,8 +204,6 @@ blockquote {
     }
         .main-logo img {
             display: block;
-            width: 130px;
-            height: 69px;
         }
     .contact-box {
         float: right;
@@ -752,7 +751,7 @@ blockquote {
         margin: 0 auto 25px;
         text-align: center;
     }
-        .wrap-main-picture-page img {
+        .main-picture-page {
             vertical-align: top;
         }
         .wrap-main-picture-page figcaption {
@@ -875,6 +874,9 @@ blockquote {
             margin-bottom: 12px;
             font: 18px 'PFAgoraSansPro-Bold';
         }
+        .contact-inner .sub-header {
+            margin-top: 25px;
+        }
         .list-more-articles {
             width: 350px;
             margin-left: -25px;
@@ -971,6 +973,23 @@ blockquote {
                 -o-transition: all .3s;
                 transition: all .3s;
             }
+        .wrap-list-foto-fancybox-object {
+            overflow: hidden;
+            width: 500px;
+        }
+            .list-foto-fancybox-object {
+                overflow: hidden;
+            }
+                .list-foto-fancybox-object > li {
+                    float: left;
+                }
+                    .list-foto-fancybox-object a {
+                        display: block;
+                        border: 4px solid #fff;
+                    }
+                        .list-foto-fancybox-object {
+
+                        }
 
 .btn-show {
     display: block;
