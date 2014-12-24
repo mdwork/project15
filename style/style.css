@@ -870,7 +870,7 @@ blockquote {
         padding-top: 18px;
         border-top: 2px solid #F2F2F2;
     }
-        .more-articles .name {
+        .sub-header {
             display: block;
             margin-bottom: 12px;
             font: 18px 'PFAgoraSansPro-Bold';
