@@ -17,7 +17,7 @@ textarea                       { vertical-align:top; }
 input[type=submit]             { cursor:pointer; }
 img, fieldset                  { border:0; }
 table                          { border-collapse:collapse; border-spacing:0; }
-a:link, a:visited              { font:14px 'PFAgoraSansPro-Medium', sans-serif; color:#000; text-decoration:underline; }
+a:link, a:visited              { font:14px 'PFAgoraSansPro-Regular', sans-serif; color:#000; text-decoration:underline; }
 a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------DEFAULT CLASSES------------------------------*/
@@ -764,6 +764,7 @@ blockquote {
     .wrap-content-inner-page {
         width: 500px;
         margin: 0 auto;
+        padding-bottom: 40px;
     }
         .wrap-content-inner-page p {
             margin-bottom: 20px;
@@ -863,6 +864,33 @@ blockquote {
             .list-articles p {
                 margin-top: 25px;
             }
+    .more-articles {
+        width: 500px;
+        margin: 0 auto;
+        padding-top: 18px;
+        border-top: 2px solid #F2F2F2;
+    }
+        .more-articles .name {
+            display: block;
+            margin-bottom: 12px;
+            font: 18px 'PFAgoraSansPro-Bold';
+        }
+        .list-more-articles {
+            width: 350px;
+            margin-left: -25px;
+        }
+            .list-more-articles li {
+                margin-bottom: 6px;
+                padding-left: 25px;
+            }
+                .list-more-articles a {
+                    color: #d44c58;
+                    text-decoration: none;
+                }
+                .list-more-articles a:hover {
+                    text-decoration: underline;
+                }
+
 .btn-show {
     display: block;
     width: 160px;
