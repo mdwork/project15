@@ -73,7 +73,14 @@ $(document).ready(function(){
     $("body").append('<span class="wrap-form-ajax"></span>');
     $('.wrap-form-ajax').load("form.html #form-ajax");
 
+
     $('#btn-result').on('click', function(){
+        var inputTypeHouse = $('.list-choose-parametr input:checked'),
+            inputTypeHouseLength = inputTypeHouse.length,
+            inputHeight = $('#height-house'),
+            inputWidth = $('#width-house'),
+            inputLength = $('#length-house');
+
         $('#calculator').slideUp(500, function(){
             $('#result-calculator').slideDown(500);
         });
