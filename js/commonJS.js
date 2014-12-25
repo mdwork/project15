@@ -70,5 +70,6 @@ $(document).ready(function(){
         this.value = this.value.replace(/[^\d]/g, '');
     });
 
-
+    $("body").append('<span class="wrap-form-ajax"></span>');
+    $('.wrap-form-ajax').load("form.html #form-ajax");
 });
