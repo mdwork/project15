@@ -1064,6 +1064,8 @@ blockquote {
                 }
                 .objects-page .wrap-picture img {
                     display: block;
+                    width: 210px;
+                    height: 160px;
                 }
                 .objects-page .wrap-picture .area {
                     position: absolute;
@@ -1071,7 +1073,7 @@ blockquote {
                     right: 15px;
                     padding: 5px 8px 6px;
                     background: rgba(0, 0, 0, .3);
-                    text-shadow: 0px 1px 0px rgba(0, 0, 0, 1);
+                    text-shadow: 0 1px 0 rgba(0, 0, 0, 1);
                 }
                     .objects-page .wrap-picture .area:after {
                         content: '2';
