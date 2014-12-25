@@ -31,4 +31,36 @@ $(document).ready(function(){
             $(this).addClass('active');
         }
     });
+
+    var posBlockWhyWe = $('.bonus-block-js').offset().top;
+    $('.bonus-border').on('click', function() {
+        $('html, body').animate({
+            scrollTop: posBlockWhyWe + 5
+        });
+    });
+
+    /*placeholder support for ie8*/
+    (function ($) {
+        $.support.placeholder = ('placeholder' in document.createElement('input'));
+    })(jQuery);
+
+
+    //fix for IE7 and IE8
+    $(function () {
+        if (!$.support.placeholder) {
+            $("[placeholder]").focus(function () {
+                if ($(this).val() == $(this).attr("placeholder")) $(this).val("");
+            }).blur(function () {
+                if ($(this).val() == "") $(this).val($(this).attr("placeholder"));
+            }).blur();
+
+            $("[placeholder]").parents("form").submit(function () {
+                $(this).find('[placeholder]').each(function() {
+                    if ($(this).val() == $(this).attr("placeholder")) {
+                        $(this).val("");
+                    }
+                });
+            });
+        }
+    });
 });
