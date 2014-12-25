@@ -737,6 +737,7 @@ blockquote {
                 margin-bottom: 10px;
             }
 .contact-inner {
+    position: relative;
     padding: 30px 40px 40px;
 }
     .main-header {
