@@ -1024,11 +1024,11 @@ blockquote {
         padding: 17px 20px 11px;
         background: #D44C58;
     }
-        .wrap-form-header .header-form {
+        .position-form .header-form {
             margin-bottom: 23px;
             color: #fff;
         }
-            .wrap-form-header .btn {
+            .position-form .btn {
                 border: 2px solid #fff;
             }
 
