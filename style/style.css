@@ -596,9 +596,16 @@ blockquote {
             .tolltip-choose-papametr:after {
                 content: 'Выберите, пожалуйста, тип конструкции';
                 position: absolute;
-                right: -20px;
-                top: 50px;
+                right: -140px;
+                top: 0;
+                padding: 5px 10px;
                 background: #ff0;
+                font-family: 'PFAgoraSansPro-Bold', sans-serif;
+
+                -webkit-transition: all .3s;
+                -moz-transition: all .3s;
+                -o-transition: all .3s;
+                transition: all .3s;
             }
                 .list-choose-parametr li,
                 .list-additional-parametrs li {
