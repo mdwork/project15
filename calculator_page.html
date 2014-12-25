@@ -44,11 +44,9 @@
         </div>
 
         <div class="calculator-box">
-            <header class="main-header">
-                <h1>Рассчитать стоимость</h1>
-            </header>
+            <span class="header-section">Рассчитать стоимость</span>
 
-            <ul class="calculator box-shadow">
+            <ul id="calculator" class="calculator box-shadow">
                 <li>
                     <span class="name-parametr">Тип конструкции</span>
 
@@ -63,14 +61,14 @@
                         <li>
                             <label>
                                 <span class="wrap-input"><input type="radio" name="type-construction"></span>
-                                <span class="second">2 этажа</span>
+                                <span class="second">2 этажа + крыша</span>
                             </label>
                         </li>
 
                         <li>
                             <label>
                                 <span class="wrap-input"><input type="radio" name="type-construction"></span>
-                                <span class="third">3 этажа + крыша</span>
+                                <span class="third">2 этажа + мансарда</span>
                             </label>
                         </li>
                     </ul><!--end LIST-CHOOSE-PARAMETR-->
@@ -81,22 +79,98 @@
 
                     <ul class="list-additional-parametrs">
                         <li>
-                            <label><input type="text" placeholder="Длина дома (м)"></label>
+                            <label><input type="text" id="length-house" placeholder="Длина дома (м)"></label>
                         </li>
 
                         <li>
-                            <label><input type="text" placeholder="Ширина дома (м)"></label>
+                            <label><input type="text" id="width-house" placeholder="Ширина дома (м)"></label>
                         </li>
 
                         <li>
-                            <label><input type="text" placeholder="Высота потолка (м)"></label>
+                            <label><input type="text" id="height-house" placeholder="Высота потолка (м)"></label>
                         </li>
                     </ul><!--end LIST-CHOOSE-PARAMETR-->
                 </li>
 
-                <li class="last"><button class="btn">Произвести расчет</button></li>
+                <li class="last"><button id="btn-result" class="btn">Произвести расчет</button></li>
             </ul><!--end CALCULATOR-->
-        </div>
+
+            <ul id="result-calculator" class="calculator calculator-result box-shadow">
+                <li>
+                    <span class="name-parametr">Входные параметры</span>
+
+                    <ul class="list-charac-house">
+                        <li>
+                            <span class="name">Общая площадь</span>
+                            <span class="number square-js">144</span>
+                        </li>
+
+                        <li>
+                            <span class="name">Ширина</span>
+                            <span class="number width-js">144</span>
+                        </li>
+
+                        <li>
+                            <span class="name">Тип конструкции</span>
+                            <span class="number type-construction-js">2 этажа</span>
+                        </li>
+
+                        <li>
+                            <span class="name">Высота потолков</span>
+                            <span class="number height-js">144 м</span>
+                        </li>
+
+                        <li>
+                            <span class="name">Длина</span>
+                            <span class="number length-js">144 м</span>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <span class="name-parametr">В стоимость включено</span>
+
+                    <p>Изготовление конструктива, обвязочный брус, пиломатериал (строганный,
+                        обработанный огне-био защитой), гидроизоляция половых панелей с наружной стороны
+                        битумом, монтажная пена, все крепёжные элементы.</p>
+                </li>
+
+                <li>
+                    <span class="name-parametr">Итого:
+                        <span id="total-result">1 115 974</span>
+                        <span class="rubl">i</span>
+                    </span>
+                </li>
+
+                <li class="last">
+                    <form class="callback-form" name="feedback" action="#">
+                        <fieldset>
+                            <legend class="header-form">Отправить заявку</legend>
+
+                            <ul>
+                                <li>
+                                    <label>
+                                        <input class="input-text" type="text" name="name" value="" placeholder="Представьтесь">
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input class="input-text" type="tel" name="tell" value="" placeholder="+79001234567">
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <input type="hidden" name="bot-field" value="">
+                                </li>
+                            </ul>
+
+                            <button class="btn feedback">Заказать</button>
+                        </fieldset>
+                    </form>
+                </li>
+            </ul>
+        </div><!--end CALCULATOR-BOX-->
     </div><!--end WRAP-->
 
     <footer class="footer content" role="contentinfo">
