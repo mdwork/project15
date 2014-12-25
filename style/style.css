@@ -260,7 +260,7 @@ blockquote {
     }
         .bread-crumbs span {
             display: inline-block;
-            margin-left: 10px;
+            margin-left: 8px;
             padding-left: 20px;
             background: url("../images/header/arrow_bread.png") no-repeat 0 7px;
             font: 14px 'PFAgoraSansPro-Light';
@@ -901,6 +901,7 @@ blockquote {
                 }
             .date-article {
                 padding-left: 20px;
+                text-transform: lowercase;
                 color: #acacac;
                 font: 14px 'PFAgoraSansPro-Light';
                 background: url("../images/content/icon_clock.png") 0 2px no-repeat;
