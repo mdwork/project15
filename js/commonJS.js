@@ -32,12 +32,14 @@ $(document).ready(function(){
         }
     });
 
-    var posBlockWhyWe = $('.bonus-block-js').offset().top;
-    $('.bonus-border').on('click', function() {
-        $('html, body').animate({
-            scrollTop: posBlockWhyWe + 5
+    if($('.bonus-block-js').length != 0) {
+        var posBlockWhyWe = $('.bonus-block-js').offset().top;
+        $('.bonus-border').on('click', function () {
+            $('html, body').animate({
+                scrollTop: posBlockWhyWe + 5
+            });
         });
-    });
+    }
 
     /*placeholder support for ie8*/
     (function ($) {
@@ -63,4 +65,10 @@ $(document).ready(function(){
             });
         }
     });
+
+    $('.list-additional-parametrs input').on('keyup', function(){
+        this.value = this.value.replace(/[^\d]/g, '');
+    });
+
+
 });

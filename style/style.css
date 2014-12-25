@@ -557,6 +557,7 @@ blockquote {
         }
 .calculator-box {
     overflow: hidden;
+    min-height: 460px;
     padding: 35px 0 55px;
     background: #fff;
 }
