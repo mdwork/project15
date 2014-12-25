@@ -571,7 +571,6 @@ blockquote {
         border: 1px solid #E9E9E9;
     }
         .calculator li {
-            float: left;
             font-family: 'PFAgoraSansPro-Light', sans-serif;
         }
         .calculator > li {
@@ -581,82 +580,84 @@ blockquote {
             float: none;
             margin-bottom: 20px;
         }
-            .calculator label {
-                display: table;
-                width: 148px;
-                padding: 13px 10px;
-                border: 1px solid #E0E0E0;
-                cursor: pointer;
+            .name-parametr {
+                display: block;
+                margin-bottom: 15px;
+                font: 18px 'PFAgoraSansPro-Black';;
+                color: #a73e5c;
             }
-            .calculator .active label {
-                border-color: #D44C58;
+            .list-choose-parametr,
+            .list-additional-parametrs {
+                overflow: hidden;
             }
-                .name-parametr {
-                    display: block;
-                    margin-bottom: 15px;
-                    font: 18px 'PFAgoraSansPro-Black';;
-                    color: #a73e5c;
+                .list-choose-parametr li,
+                .list-additional-parametrs li {
+                    float: left;
+                    width: 170px;
+                    margin-left: 20px;
                 }
-                .list-choose-parametr,
-                .list-additional-parametrs {
-                    overflow: hidden;
+                .list-choose-parametr li:first-child,
+                .list-additional-parametrs li:first-child {
+                    margin-left: 0;
                 }
-                    .list-choose-parametr li,
-                    .list-additional-parametrs li {
-                        width: 170px;
-                        margin-left: 20px;
+                    .list-choose-parametr label,
+                    .list-additional-parametrs label {
+                        display: table;
+                        width: 148px;
+                        padding: 13px 10px;
+                        border: 1px solid #E0E0E0;
+                        cursor: pointer;
                     }
-                    .list-choose-parametr li:first-child,
-                    .list-additional-parametrs li:first-child {
-                        margin-left: 0;
+                    .calculator .active label {
+                        border-color: #D44C58;
                     }
-                        .list-choose-parametr span {
-                            display: table-cell;
-                            vertical-align: middle;
-                        }
-                        .list-choose-parametr .wrap-input {
+                    .list-choose-parametr span {
+                        display: table-cell;
+                        vertical-align: middle;
+                    }
+                    .list-choose-parametr .wrap-input {
+                        width: 20px;
+                    }
+                        .list-choose-parametr .wrap-input:before {
+                            content: '';
+                            display: block;
                             width: 20px;
+                            height: 20px;
+                            background: url("../images/content/input_status.png") no-repeat;
                         }
-                            .list-choose-parametr .wrap-input:before {
-                                content: '';
-                                display: block;
-                                width: 20px;
-                                height: 20px;
-                                background: url("../images/content/input_status.png") no-repeat;
-                            }
-                            .list-choose-parametr .active .wrap-input:before {
-                                background: url("../images/content/input_status_active.png") no-repeat;
-                            }
-                            .list-choose-parametr .wrap-input input {
-                                position: absolute;
-                                left: -9999px;
-                            }
-                            .list-choose-parametr .text {
-                                display: inline-block;
-                                width: 100%;
-                                text-align: center;
-                            }
-                        .list-choose-parametr .first {
-                            background: url("../images/content/icon_house1.png") no-repeat;
+                        .list-choose-parametr .active .wrap-input:before {
+                            background: url("../images/content/input_status_active.png") no-repeat;
                         }
-                        .list-choose-parametr .second {
-                            background: url("../images/content/icon_house2.png") no-repeat;
+                        .list-choose-parametr .wrap-input input {
+                            position: absolute;
+                            left: -9999px;
                         }
-                        .list-choose-parametr .third {
-                            background: url("../images/content/icon_house3.png") no-repeat;
-                        }
-                        .list-choose-parametr .first,
-                        .list-choose-parametr .second,
-                        .list-choose-parametr .third {
-                            padding-top: 50px;
+                        .list-choose-parametr .text {
+                            display: inline-block;
+                            width: 100%;
                             text-align: center;
-                            background-position: top center;
                         }
-
-                    .list-additional-parametrs input {
-                        width: 100%;
-                        border: none;
+                    .list-choose-parametr .first {
+                        background: url("../images/content/icon_house1.png") no-repeat;
                     }
+                    .list-choose-parametr .second {
+                        background: url("../images/content/icon_house2.png") no-repeat;
+                    }
+                    .list-choose-parametr .third {
+                        background: url("../images/content/icon_house3.png") no-repeat;
+                    }
+                    .list-choose-parametr .first,
+                    .list-choose-parametr .second,
+                    .list-choose-parametr .third {
+                        padding-top: 50px;
+                        text-align: center;
+                        background-position: top center;
+                    }
+
+                .list-additional-parametrs input {
+                    width: 100%;
+                    border: none;
+                }
 
 .regulations-work {
     padding: 35px 0 20px;
