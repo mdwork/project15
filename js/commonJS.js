@@ -77,12 +77,14 @@ $(document).ready(function(){
     $('#btn-result').on('click', function(){
         var inputTypeHouse = $('.list-choose-parametr input:checked'),
             inputTypeHouseLength = inputTypeHouse.length,
-            inputHeight = $('#height-house'),
-            inputWidth = $('#width-house'),
-            inputLength = $('#length-house');
+            inputHeight = $('#height-house').val(),
+            inputWidth = $('#width-house').val(),
+            inputLength = $('#length-house').val();
 
-        $('#calculator').slideUp(500, function(){
-            $('#result-calculator').slideDown(500);
-        });
+        if(inputTypeHouseLength != 0 && inputHeight != '' && inputWidth != '' && inputLength != '') {
+            $('#calculator').slideUp(500, function(){
+                $('#result-calculator').slideDown(500);
+            });
+        }
     });
 });
