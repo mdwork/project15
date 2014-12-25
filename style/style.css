@@ -753,6 +753,40 @@ blockquote {
             margin-bottom: 8px;
             font: 30px 'PFAgoraSansPro-Bold';
         }
+    .wrap-square,
+    .wrap-cost {
+        position: absolute;
+        top: 200px;
+        left: 0;
+        display: block;
+        width: 220px;
+        text-align: center;
+    }
+    .wrap-cost {
+        top: 290px;
+    }
+        .wrap-square .number,
+        .wrap-cost .number {
+            display: block;
+        }
+            .wrap-square .number,
+            .wrap-cost .number {
+                font: 36px 'PFAgoraSansPro-Bold';;
+                line-height: 36px;
+            }
+            .wrap-cost .number {
+                color: #e3bb4d;
+            }
+                .wrap-cost .rubl,
+                .wrap-square .format {
+                    font-size: 18px;
+                }
+                .wrap-square .format:after {
+                    content: '2';
+                    position: relative;
+                    top: -7px;
+                    font-size: 10px;
+                }
     .wrap-main-picture-page {
         width: 620px;
         margin: 0 auto 25px;
