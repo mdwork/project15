@@ -575,6 +575,7 @@ blockquote {
             font-family: 'PFAgoraSansPro-Light', sans-serif;
         }
         .calculator > li {
+            position: relative;
             margin-bottom: 35px;
         }
         .calculator .last {
@@ -589,7 +590,15 @@ blockquote {
             }
             .list-choose-parametr,
             .list-additional-parametrs {
+                position: relative;
                 overflow: hidden;
+            }
+            .tolltip-choose-papametr:after {
+                content: 'Выберите, пожалуйста, тип конструкции';
+                position: absolute;
+                right: -20px;
+                top: 50px;
+                background: #ff0;
             }
                 .list-choose-parametr li,
                 .list-additional-parametrs li {
@@ -608,6 +617,9 @@ blockquote {
                         padding: 13px 10px;
                         border: 1px solid #E0E0E0;
                         cursor: pointer;
+                    }
+                    .disable {
+                        border: 1px solid #f00 !important;
                     }
                     .calculator .active label {
                         border-color: #D44C58;

@@ -98,5 +98,36 @@ $(document).ready(function(){
                 $('#result-calculator').slideDown(500);
             });
         }
+        else {
+            $('.list-additional-parametrs input').each(function(){
+                var $this = $(this);
+                if($this.val() == '') {
+                    $this.parent().addClass('disable');
+
+                    $this.on('keydown', function(){
+                        if($this.val() != '') {
+                            $this.parent().removeClass('disable');
+                        }
+                        $this.on('blur', function(){
+                            if($this.val() != '') {
+                                $this.parent().removeClass('disable');
+                            }
+                            else {
+                                $this.parent().addClass('disable');
+                            }
+                        });
+                    });
+                }
+            });
+
+            if($('.list-choose-parametr input:checked').length == 0) {
+                var tooltip = $('.list-choose-parametr').parent();
+                tooltip.addClass('tolltip-choose-papametr');
+
+                $('.list-choose-parametr input').on('click', function() {
+                    tooltip.removeClass('tolltip-choose-papametr');
+                });
+            }
+        }
     });
 });
