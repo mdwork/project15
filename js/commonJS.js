@@ -72,4 +72,10 @@ $(document).ready(function(){
 
     $("body").append('<span class="wrap-form-ajax"></span>');
     $('.wrap-form-ajax').load("form.html #form-ajax");
+
+    $('#btn-result').on('click', function(){
+        $('#calculator').slideUp(500, function(){
+            $('#result-calculator').slideDown(500);
+        });
+    });
 });

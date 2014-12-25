@@ -660,6 +660,7 @@ blockquote {
                     border: none;
                 }
     .calculator-result {
+        display: none;
         width: 590px;
         padding: 0;
     }
