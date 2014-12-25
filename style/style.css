@@ -251,27 +251,29 @@ blockquote {
         width: 940px;
         margin: 22px auto 20px;
     }
-        .bread-crumbs li {
-            float: left;
+        .bread-crumbs span {
+            display: inline-block;
             margin-left: 10px;
             padding-left: 20px;
             background: url("../images/header/arrow_bread.png") no-repeat 0 7px;
+            font: 14px 'PFAgoraSansPro-Light';
         }
-        .bread-crumbs li:first-child {
+        .bread-crumbs span:first-child {
             margin-left: 0;
             padding-left: 0;
             background: none;
         }
-            .bread-crumbs li a {
+        .bread-crumbs span:last-child {
+            font-weight: 700;
+            color: #303030;
+        }
+            .bread-crumbs span a {
+                background: none;
                 color: #a0a0a0;
                 text-decoration: none;
-                font: 14px 'PFAgoraSansPro-Light';;
+                font: 14px 'PFAgoraSansPro-Light';
             }
-            .bread-crumbs li a:hover {
-                color: #303030;
-            }
-            .bread-crumbs li:last-child a {
-                pointer-events: none;
+            .bread-crumbs span a:hover {
                 color: #303030;
             }
 /*----------------------------------------------------------------------------------*/
