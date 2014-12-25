@@ -193,6 +193,9 @@ blockquote {
         width: 100%;
         height: 120px;
     }
+    .landing .wrap:after {
+        display: none;
+    }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -1094,7 +1097,31 @@ blockquote {
                         font: 14px 'PFAgoraSansPro-Regular';;
                         color: #e3bb4d;
                     }
-
+.contact-block {
+    overflow: hidden;
+    padding: 60px 0;
+}
+    .contact-block .content {
+        position: relative;
+    }
+        .contact-block .address-map {
+            background: #D44C58;
+            color: #fff;
+        }
+        .contact-block .address-map:after {
+            content: '';
+            position: absolute;
+            top: 47%;
+            right: -10px;
+            display: block;
+            width: 0;
+            height: 0;
+            border-top: 11px solid #D44C58;
+            border-right: 10px solid transparent;
+        }
+            .contact-block .address-map .mail {
+                color: #fff;
+            }
 .btn-show {
     display: block;
     width: 160px;
@@ -1112,10 +1139,6 @@ blockquote {
     color: #fff;
     background: #303030;
 }
-/*----------------------------------------------------------------------------------*/
-/*-------------------------------------SIDEBAR--------------------------------------*/
-/*----------------------------------------------------------------------------------*/
-
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
