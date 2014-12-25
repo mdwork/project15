@@ -83,6 +83,18 @@ $(document).ready(function(){
 
         if(inputTypeHouseLength != 0 && inputHeight != '' && inputWidth != '' && inputLength != '') {
             $('#calculator').slideUp(500, function(){
+                $('.square-js').text(inputHeight * inputWidth * inputLength + ' м');
+                $('.width-js').text(inputWidth + ' м');
+                $('.length-js').text(inputLength + ' м');
+                $('.height-js').text(inputHeight + ' м');
+                $('.type-construction-js').text(inputTypeHouse.parent().siblings('span').text());
+
+                var coef = [1, 1.3, 1.6],
+                    numberTypeConstr = inputTypeHouse.parent().parent().parent().index();
+
+
+                $('#total-result').text((inputHeight * inputWidth * inputLength * coef[numberTypeConstr]).toFixed(0));
+
                 $('#result-calculator').slideDown(500);
             });
         }

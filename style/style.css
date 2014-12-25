@@ -686,7 +686,7 @@ blockquote {
                         font-family: 'PFAgoraSansPro-Regular', sans-serif;
                         color: #303030;
                     }
-                        .list-charac-house .number:after {
+                        .list-charac-house .square-js:after {
                             content: '2';
                             position: relative;
                             top: -5px;
