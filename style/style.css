@@ -96,7 +96,8 @@ a:hover                        { text-decoration:none; }
         border-top-color: #723B40;
     }
 .header-form {
-    display: inline-block;
+    display: block;
+    width: 100%;
     margin-bottom: 34px;
     font: 18px "PFAgoraSansPro-Bold", sans-serif;
     line-height: 24px;
@@ -657,6 +658,63 @@ blockquote {
                 .list-additional-parametrs input {
                     width: 100%;
                     border: none;
+                }
+    .calculator-result {
+        width: 590px;
+        padding: 0;
+    }
+        .calculator-result > li {
+            padding: 10px 20px;
+            margin-bottom: 5px;
+        }
+        .calculator-result > li:first-child {
+            overflow: hidden;
+            background: #F2F2F2;
+        }
+                .list-charac-house li {
+                    overflow: hidden;
+                    float: left;
+                    width: 250px;
+                    padding-right: 5px;
+                    margin-bottom: 4px;
+                    color: #b0b0b0;
+                }
+                    .list-charac-house .number {
+                        float: right;
+                        width: 130px;
+                        font-family: 'PFAgoraSansPro-Regular', sans-serif;
+                        color: #303030;
+                    }
+                        .list-charac-house .number:after {
+                            content: '2';
+                            position: relative;
+                            top: -5px;
+                            display: inline-block;
+                            font-size: 9px;
+                        }
+                    #total-result {
+                        color: #303030;
+                        font: 24px 'PFAgoraSansPro-Black';;
+                    }
+                    .calculator-result .rubl {
+                        color: #303030;
+                    }
+            .calculator-result .callback-form {
+                width: auto;
+                padding: 0;
+            }
+            .calculator-result .last {
+                padding: 0 0 10px;
+            }
+                .calculator-result .header-form {
+                    margin-bottom: 20px;
+                    padding: 7px 0;
+                    color: #303030;
+                    background: #f2f2f2;
+                }
+                .calculator-result .callback-form ul {
+                    width: 286px;
+                    margin: 0 auto;
                 }
 
 .regulations-work {
