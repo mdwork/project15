@@ -753,6 +753,10 @@ blockquote {
         margin-bottom: 30px;
         text-align: center;
     }
+    .single .main-header {
+        width: 620px;
+        margin: 0 auto 30px;
+    }
         .main-header h1 {
             display: block;
             margin-bottom: 8px;
