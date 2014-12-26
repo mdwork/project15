@@ -1135,11 +1135,11 @@ blockquote {
                         -moz-box-shadow:    0px 0px 4px 0px rgba(50, 50, 50, 0.5);
                         box-shadow:         0px 0px 4px 0px rgba(50, 50, 50, 0.5);
                     }
-                        .list-foto-fancybox-object img {
+                        .list-foto-fancybox-object .left-column img {
                             width: 232px;
                             height: 151px;
                         }
-                        .list-foto-fancybox-object img {
+                        .list-foto-fancybox-object .right-column img {
                             width: 212px;
                             height: 151px;
                         }
