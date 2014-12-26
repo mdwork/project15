@@ -152,7 +152,7 @@ $(document).ready(function(){
         var curClickElement = $(this).parent().index();
         $('html, body').animate({
             scrollTop: arrayAnchorBlock.eq(curClickElement).offset().top - 115
-        });
+        }, 700);
     });
 
     /*scroll active link*/
