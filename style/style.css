@@ -835,6 +835,7 @@ blockquote {
                 margin-bottom: 10px;
             }
 .contact-inner {
+    display: block;
     position: relative;
     padding: 30px 40px 40px;
 }
