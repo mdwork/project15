@@ -235,6 +235,17 @@ blockquote {
         margin-top: 24px;
         text-align: center;
     }
+    .landing .wrap-header-box {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        width: 100%;
+        background:#F2F2F2;
+    }
+    .landing .wrap-main-form {
+        margin-top: 84px;
+    }
         .main-nav ul {
             display: inline-table;
             width: 600px;
