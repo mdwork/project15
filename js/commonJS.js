@@ -142,5 +142,15 @@ $(document).ready(function(){
         }
     });
 
+    var arrayAnchorBlock = $('.anchor-elem-js'),
+        listLinkAnchor = $('.nav-landing a');
 
+    listLinkAnchor.on('click', function(e){
+        e.preventDefault();
+
+        var curClickElement = $(this).parent().index();
+        $('html, body').animate({
+            scrollTop: arrayAnchorBlock.eq(curClickElement).offset().top - 154
+        });
+    });
 });
