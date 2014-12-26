@@ -142,6 +142,7 @@ $(document).ready(function(){
         }
     });
 
+    /*animate for anchors from menu*/
     var arrayAnchorBlock = $('.anchor-elem-js'),
         listLinkAnchor = $('.nav-landing a');
 
@@ -150,7 +151,33 @@ $(document).ready(function(){
 
         var curClickElement = $(this).parent().index();
         $('html, body').animate({
-            scrollTop: arrayAnchorBlock.eq(curClickElement).offset().top - 154
+            scrollTop: arrayAnchorBlock.eq(curClickElement).offset().top - 115
+        });
+    });
+
+    /*scroll active link*/
+    $(window).on('scroll', function(){
+        var curPositionWindow = $(window).scrollTop(),
+            curClickElement = $('.nav-landing a');
+
+        var arrayValuesPosAnchorElems = [];
+
+        arrayAnchorBlock.each(function(){
+            arrayValuesPosAnchorElems.push($(this).offset().top - 115);
+        });
+
+        arrayValuesPosAnchorElems.forEach(function(element, index){
+            if(curPositionWindow >= element - 115) {
+                curClickElement
+                    .parent()
+                    .eq(index)
+                    .addClass('current-menu-item')
+                    .siblings()
+                    .removeClass('current-menu-item');
+            }
+            else if(curPositionWindow < arrayValuesPosAnchorElems[0]) {
+                curClickElement.parent().removeClass('current-menu-item');
+            }
         });
     });
 });
