@@ -891,6 +891,9 @@ blockquote {
         margin: 0 auto 25px;
         text-align: center;
     }
+    .wrap-main-picture-page.obj-figure {
+        width: 500px;
+    }
         .main-picture-page {
             vertical-align: top;
         }
@@ -1267,8 +1270,6 @@ blockquote {
     display: block;
     width: 160px;
     margin: 0 auto;
-    padding: 10px 0;
-    font: 16px 'PFAgoraSansPro-Regular';
     background: #FFDD81;
     border: none;
     -webkit-transition: all .3s;
@@ -1277,9 +1278,18 @@ blockquote {
     transition: all .3s;
 }
 .btn-show:hover {
-    color: #fff;
     background: #303030;
 }
+    .btn-show a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        font: 16px 'PFAgoraSansPro-Regular';
+        text-decoration: none;
+    }
+    .btn-show:hover a {
+        color: #fff;
+    }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -1344,6 +1354,7 @@ blockquote {
 }
 .fancybox {
     position: relative;
+    display: inline-block;
 }
 .fancybox:hover:after {
     content: '';
